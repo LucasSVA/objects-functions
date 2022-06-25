@@ -85,16 +85,80 @@ const cat = {
 
 //----- ex -6
 
-const format = (num) => {
+// const format = (num) => {
 
-    let heure = Math.floor(num / 3600)
-    let minuteInitial = Math.floor(num % 3600)
-    let minute = Math.floor(minuteInitial / 60)
-    let seconde = Math.floor(minuteInitial % 60)
-    console.log(`${heure} : ${minute} :${seconde} `);
+//     let heure = Math.floor(num / 3600)
+//     let minuteInitial = Math.floor(num % 3600)
+//     let minute = Math.floor(minuteInitial / 60)
+//     let seconde = Math.floor(minuteInitial % 60)
+//     console.log(`${heure} : ${minute} :${seconde} `);
 
-}
+// }
 
 
 
-format(5800)
+// format(5700)
+
+
+//----ex - 7
+
+
+                            //   ====> vertion 1
+
+// let generatePassword = (num) => {
+
+//     if (num < 6 || num > 16) {
+//         console.log("error");
+
+//     } else {
+//         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//         let passwordLength = num
+//         let password = " "
+
+//         for (let i = 0; i < passwordLength; i++) {
+//             let randomNumber = Math.floor(Math.random() * letters.length)
+//             password += letters.substring(randomNumber, randomNumber + 1)
+//             //console.log(randomNumber, randomNumber + 1);
+//         }
+
+//         console.log(password);
+//     }
+
+
+// }
+
+// generatePassword(6)
+
+
+
+                                //   ==>  version 2
+
+
+
+// let generatePassword = (num) => {
+
+//     if (num < 6 || num > 16) {
+//         console.log("error");
+
+//     } else {
+
+//         let passwordLength = num
+//         let password = " "
+
+//         for (let i = 0; i < passwordLength; i++) {
+//             let randomNumber = Math.floor(Math.random() * (90 - 64) + 64)
+//             password += String.fromCharCode(randomNumber)
+
+//         }
+
+//         console.log(password);
+//     }
+
+// }
+
+// generatePassword(6)
+
+
+
+// ----- ex - 8
+
