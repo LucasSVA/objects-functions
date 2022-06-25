@@ -163,32 +163,32 @@ const cat = {
 // ----- ex - 8
 
 
-const launchDice = (numberOfDice) => {
+// const launchDice = (numberOfDice) => {
 
-    Joueur1 = 0
-    Joueur2 = 0
+//     Joueur1 = 0
+//     Joueur2 = 0
 
-    for (let i = 0; i <= numberOfDice; i++) {
+//     for (let i = 0; i <= numberOfDice; i++) {
 
-        let randomNumber = Math.floor(Math.random() * 6) + 1
-        Joueur1 += randomNumber
-        //console.log(` Joueur - 1 ${Joueur1}`);
-    }
+//         let randomNumber = Math.floor(Math.random() * 6) + 1
+//         Joueur1 += randomNumber
+//         //console.log(` Joueur - 1 ${Joueur1}`);
+//     }
 
-    for (let i = 0; i <= numberOfDice; i++) {
+//     for (let i = 0; i <= numberOfDice; i++) {
 
-        let randomNumber = Math.floor(Math.random() * 6) + 1
-        Joueur2 += randomNumber
-        //console.log(` Joueur -2 ${Joueur2}`);
+//         let randomNumber = Math.floor(Math.random() * 6) + 1
+//         Joueur2 += randomNumber
+//         //console.log(` Joueur -2 ${Joueur2}`);
 
-    }
+//     }
 
-    if (Joueur1 > Joueur2) {
-        console.log("Le joueur N-1 a gagné");
-    } else {
-        console.log("Le joueur N-2 a gagné");
-    }
+//     if (Joueur1 > Joueur2) {
+//         console.log("Le joueur N-1 a gagné");
+//     } else {
+//         console.log("Le joueur N-2 a gagné");
+//     }
 
-}
+// }
 
-launchDice(8)
+// launchDice(8)
