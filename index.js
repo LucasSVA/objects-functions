@@ -1,10 +1,10 @@
 // --- ex - 1
 
-const cat = {
-    name: "Garfild",
-    age: 3,
-    isCute: true
-}
+// const cat = {
+//     name: "Garfild",
+//     age: 3,
+//     isCute: true
+// }
 
 // console.log(cat.age);
 
@@ -34,9 +34,9 @@ const cat = {
 
 // const checkIfEven = (num) => {
 
-//     if ((num % 2) === 0) {
+//     if (num % 2 === 0) {
 //         console.log("even");
-//     } else if ((num % 2) != 0) {
+//     } else {
 //         console.log("odd");
 //     }
 
@@ -72,14 +72,15 @@ const cat = {
 //     for (let i = 0; i <= num; i++) {
 
 //         result += i
-
+//         console.log(result);
 
 //     }
 
-//     return result
+
+
 // }
 
-// console.log(addUp(2));
+// addUp(12);
 
 
 
@@ -87,15 +88,13 @@ const cat = {
 
 // const format = (num) => {
 
-//     let heure = Math.floor(num / 3600)
-//     let minuteInitial = Math.floor(num % 3600)
-//     let minute = Math.floor(minuteInitial / 60)
-//     let seconde = Math.floor(minuteInitial % 60)
-//     console.log(`${heure} : ${minute} :${seconde} `);
+//     let hour = Math.floor(num / 3600)
+//     let minuteCalc = Math.floor(num % 3600)
+//     let minute = Math.floor(minuteCalc / 60)
+//     let second = Math.floor(minuteCalc % 60)
+//     console.log(`${hour} : ${minute} : ${second} `);
 
 // }
-
-
 
 // format(5700)
 
@@ -112,18 +111,17 @@ const cat = {
 
 //     } else {
 //         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-//         let passwordLength = num
+
 //         let password = " "
 
-//         for (let i = 0; i < passwordLength; i++) {
-//             let randomNumber = Math.floor(Math.random() * letters.length)
+//         for (let i = 0; i < num; i++) {
+//             let randomNumber = Math.floor(Math.random() * num)
 //             password += letters.substring(randomNumber, randomNumber + 1)
 //             //console.log(randomNumber, randomNumber + 1);
 //         }
 
 //         console.log(password);
 //     }
-
 
 // }
 
@@ -142,11 +140,10 @@ const cat = {
 
 //     } else {
 
-//         let passwordLength = num
 //         let password = " "
 
-//         for (let i = 0; i < passwordLength; i++) {
-//             let randomNumber = Math.floor(Math.random() * (90 - 64) + 64)
+//         for (let i = 0; i < num; i++) {
+//             let randomNumber = Math.floor(Math.random() * (90 - 65) + 65)
 //             password += String.fromCharCode(randomNumber)
 
 //         }
@@ -156,39 +153,40 @@ const cat = {
 
 // }
 
-// generatePassword(6)
+// generatePassword(11)
 
 
 
 // ----- ex - 8
 
 
-// const launchDice = (numberOfDice) => {
+const launchDice = (numberOfDice) => {
 
-//     Joueur1 = 0
-//     Joueur2 = 0
+    Joueur1 = 0
+    Joueur2 = 0
 
-//     for (let i = 0; i <= numberOfDice; i++) {
+    for (let i = 0; i <= numberOfDice; i++) {
 
-//         let randomNumber = Math.floor(Math.random() * 6) + 1
-//         Joueur1 += randomNumber
-//         //console.log(` Joueur - 1 ${Joueur1}`);
-//     }
+        let randomNumber = Math.floor(Math.random() * 6) + 1
+        Joueur1 += randomNumber
+    }
 
-//     for (let i = 0; i <= numberOfDice; i++) {
 
-//         let randomNumber = Math.floor(Math.random() * 6) + 1
-//         Joueur2 += randomNumber
-//         //console.log(` Joueur -2 ${Joueur2}`);
+    for (let i = 0; i <= numberOfDice; i++) {
 
-//     }
+        let randomNumber = Math.floor(Math.random() * 6) + 1
+        Joueur2 += randomNumber
 
-//     if (Joueur1 > Joueur2) {
-//         console.log("Le joueur N-1 a gagné");
-//     } else {
-//         console.log("Le joueur N-2 a gagné");
-//     }
 
-// }
+    }
+    console.log(`Joueur1  ${Joueur1}   VS   Joueur2 ${Joueur2}  `);
 
-// launchDice(8)
+    if (Joueur1 > Joueur2) {
+        console.log("Le joueur N-1 a gagné");
+    } else {
+        console.log("Le joueur N-2 a gagné");
+    }
+
+}
+
+launchDice(5)
